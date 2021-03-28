@@ -1,0 +1,74 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+figure {
+	height: 235px;
+	width: 235px;
+	background-color: #f06292;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+}
+
+figure h2 {
+	transition: 0.2s;
+	transform: translateY(20px);
+}
+
+figure p {
+	transition: 0.2s;
+	transform: translateY(-20px);
+	opacity: 0;
+	visibility: hidden;
+}
+
+figure:before {
+	content: '';
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	right: 5%;
+	bottom: 5%;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	transition: 0.2s;
+	transform: scaleX(0);
+}
+
+figure:hover:before {
+	transform: scale(1);
+}
+
+figure:after {
+	content: '';
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	right: 5%;
+	bottom: 5%;
+	border-left: 2px solid;
+	border-right: 2px solid;
+	transition: 0.2s;
+	transform: scaleY(0);
+}
+
+figure:hover:before,
+figure:hover:after {
+	transform: scale(1);
+}
+
+figure:hover h2,
+figure:hover p {
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}	

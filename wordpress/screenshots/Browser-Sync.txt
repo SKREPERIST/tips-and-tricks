@@ -1,0 +1,5 @@
+npm install -g browser-sync
+browser-sync start --server --files "**/*" --no-notify
+browser-sync start --proxy "dreams" --files "**/*" --no-notify
+
+
