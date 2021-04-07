@@ -5,6 +5,18 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  // font-family: "Roboto-Regular", sans-serif;
+  // font-size: 15px;
+  // line-height: 24px;
+  // font-weight: 400;
+  // color: $text;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  max-width: 320px;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -44,6 +56,17 @@ li {
   padding: 0 15px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  // padding: 0;
+}
+
 // .container-fluid {
 //   max-width: 100%;
 //   margin: 0 auto;
@@ -55,17 +78,6 @@ li {
 //     padding: 0 15px;
 //   }
 // }
-
-body {
-  // font-family: "Roboto-Regular", sans-serif;
-  // font-size: 15px;
-  // line-height: 24px;
-  // font-weight: 400;
-  // color: $text;
-  height: 100%;
-  position: relative;
-  overflow-x: hidden;
-}
 
 // .breadcrumbs {
 //   &__inner {
